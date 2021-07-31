@@ -1,0 +1,42 @@
+version: "2.0"
+
+intents:
+  - elaborate
+  - correct_answer
+  - dont_know
+  - greet
+  - aks_name
+  - tell_name
+  - give_name
+
+responses:
+  utter_question:
+  - text: "What is special about the following sentence: “the quick brown fox jumps over the lazy dog”?"
+
+  utter_try_again:
+  - text: "Can you try again"
+
+  utter_move_to_next_question:
+  - text: "lets move to next question"
+
+  utter_welcome:
+  - text: Hi there! What can I help you with today?
+
+  utter_elaborate:
+  - text: This is the language question
+
+  utter_ask_name:
+  - text: What is your name
+
+actions:
+  - action_hello_world
+  - store_name
+  - get_name
+
+slots:
+  name:
+    type: text
+    
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

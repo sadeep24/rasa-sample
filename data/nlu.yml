@@ -1,0 +1,48 @@
+version: "2.0"
+
+nlu:
+- intent: elaborate
+  examples: |
+    - can you explain
+    - describe
+    - elaborate
+    - can you elaborate a little bit
+    - what is it?
+    - what is the usage?
+    - what are the applications of it?
+    - what is it used for
+
+- intent: correct_answer
+  examples: |
+    - it is english alphabat kind of thing
+    - alphabat
+    - sentence
+
+- intent: dont_know
+  examples: |
+    - i don't know
+    - i don't know the answer
+    - pass
+    - can we move to next question
+    - i have no idea
+    - don't know
+    - i don't know the correct answer
+    
+- intent: greet
+  examples: |
+    - hi
+    - hello
+
+- intent: tell_name
+  examples: |
+    - i want to tell my name
+
+- intent: give_name
+  examples: |
+    - sadeep
+    - roshan
+
+- intent: aks_name
+  examples: |
+    - what is my name
+    - tell me my name

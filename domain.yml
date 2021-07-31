@@ -27,6 +27,9 @@ responses:
 
   utter_ask_name:
   - text: What is your name
+  
+  utter_please_rephrase:
+  - text: I'm sorry, I didn't quite understand that. Could you rephrase?
 
 actions:
   - action_hello_world
